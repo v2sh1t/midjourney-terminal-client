@@ -1,6 +1,9 @@
 @echo off
-echo 配置git代理...
-git config --global url."https://gh.tryxd.cn/https://github.com/".insteadOf "https://github.com/"
+echo 配置代理...
+set http_proxy=http://127.0.0.1:7890
+set https_proxy=http://127.0.0.1:7890
+git config --global http.proxy https://127.0.0.1:7890
+git config --global https.proxy https://127.0.0.1:7890
 
 echo 正在创建build目录...
 if not exist "build" mkdir build
