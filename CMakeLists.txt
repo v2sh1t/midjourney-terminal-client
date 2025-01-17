@@ -19,7 +19,7 @@ include(FetchContent)
 # 添加 CPR 库
 FetchContent_Declare(
     cpr
-    GIT_REPOSITORY https://github.com/libcpr/cpr
+    GIT_REPOSITORY https://github.com/libcpr/cpr.git
     GIT_TAG 1.10.5
 )
 FetchContent_MakeAvailable(cpr)
@@ -34,7 +34,7 @@ FetchContent_MakeAvailable(json)
 # 添加 CLI11
 FetchContent_Declare(
     CLI11
-    GIT_REPOSITORY https://github.com/CLIUtils/CLI11
+    GIT_REPOSITORY https://github.com/CLIUtils/CLI11.git
     GIT_TAG v2.3.2
 )
 FetchContent_MakeAvailable(CLI11)
